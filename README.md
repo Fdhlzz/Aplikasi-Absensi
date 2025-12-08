@@ -1,4 +1,4 @@
-# 📌 Fingerprint Attendance System — Laravel 12 + ESP32 + AS608
+# Sistem Absensi Berbasis Sidik Jari
 
 Sistem absensi berbasis sidik jari menggunakan **ESP32** dan **Fingerprint Sensor AS608**, terintegrasi dengan aplikasi **Laravel 12** sebagai backend dan dashboard pengelolaan data.
 
@@ -45,7 +45,7 @@ Install Node.js
 npm install
 ```
 
-## 4. Configure Environment
+## 4. konfigurasi Environment
 
 buat file .env
 
