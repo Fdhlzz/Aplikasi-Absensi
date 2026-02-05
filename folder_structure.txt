@@ -1,0 +1,176 @@
+.
+├── ./app
+│   ├── ./app/Http
+│   │   └── ./app/Http/Controllers
+│   │       ├── ./app/Http/Controllers/Api
+│   │       │   ├── ./app/Http/Controllers/Api/AbsensiController.php
+│   │       │   └── ./app/Http/Controllers/Api/PerangkatController.php
+│   │       ├── ./app/Http/Controllers/AuthController.php
+│   │       └── ./app/Http/Controllers/Controller.php
+│   ├── ./app/Livewire
+│   │   ├── ./app/Livewire/DasborUtama.php
+│   │   ├── ./app/Livewire/LaporanAbsensi.php
+│   │   ├── ./app/Livewire/ManajemenAbsensi.php
+│   │   ├── ./app/Livewire/ManajemenGuru.php
+│   │   ├── ./app/Livewire/ManajemenJadwal.php
+│   │   └── ./app/Livewire/ManajemenPerangkat.php
+│   ├── ./app/Models
+│   │   ├── ./app/Models/Absensi.php
+│   │   ├── ./app/Models/Jadwal.php
+│   │   ├── ./app/Models/Pengguna.php
+│   │   ├── ./app/Models/Perangkat.php
+│   │   └── ./app/Models/SidikJari.php
+│   └── ./app/Providers
+│       └── ./app/Providers/AppServiceProvider.php
+├── ./artisan
+├── ./bootstrap
+│   ├── ./bootstrap/app.php
+│   ├── ./bootstrap/cache
+│   │   ├── ./bootstrap/cache/packages.php
+│   │   └── ./bootstrap/cache/services.php
+│   └── ./bootstrap/providers.php
+├── ./composer.json
+├── ./composer.lock
+├── ./config
+│   ├── ./config/app.php
+│   ├── ./config/auth.php
+│   ├── ./config/cache.php
+│   ├── ./config/database.php
+│   ├── ./config/filesystems.php
+│   ├── ./config/logging.php
+│   ├── ./config/mail.php
+│   ├── ./config/queue.php
+│   ├── ./config/sanctum.php
+│   ├── ./config/services.php
+│   └── ./config/session.php
+├── ./database
+│   ├── ./database/factories
+│   │   └── ./database/factories/UserFactory.php
+│   ├── ./database/migrations
+│   │   ├── ./database/migrations/0001_01_01_000000_create_users_table.php
+│   │   ├── ./database/migrations/0001_01_01_000001_create_cache_table.php
+│   │   ├── ./database/migrations/0001_01_01_000002_create_jobs_table.php
+│   │   ├── ./database/migrations/2025_11_26_144402_create_personal_access_tokens_table.php
+│   │   ├── ./database/migrations/2025_11_26_144620_create_jadwal_table.php
+│   │   ├── ./database/migrations/2025_11_26_144620_create_perangkat_table.php
+│   │   ├── ./database/migrations/2025_11_26_144621_create_absensi_table.php
+│   │   ├── ./database/migrations/2025_11_26_144621_create_sidik_jari_table.php
+│   │   ├── ./database/migrations/2025_11_26_144622_add_jadwal_id_to_pengguna_table.php
+│   │   ├── ./database/migrations/2025_11_26_173128_add_pending_enrollment_id_to_perangkat_table.php
+│   │   └── ./database/migrations/2025_11_26_202731_add_pulang_cepat_to_absensi_enum.php
+│   └── ./database/seeders
+│       ├── ./database/seeders/AdminSeeder.php
+│       ├── ./database/seeders/DatabaseSeeder.php
+│       ├── ./database/seeders/ImportSqlSeeder.php
+│       └── ./database/seeders/sql
+│           └── ./database/seeders/sql/database.sql
+├── ./folder_structure.txt
+├── ./package.json
+├── ./package-lock.json
+├── ./phpunit.xml
+├── ./public
+│   ├── ./public/favicon.ico
+│   ├── ./public/hot
+│   ├── ./public/index.php
+│   └── ./public/robots.txt
+├── ./README.md
+├── ./resources
+│   ├── ./resources/css
+│   │   └── ./resources/css/app.css
+│   ├── ./resources/image
+│   │   └── ./resources/image/logo.png
+│   ├── ./resources/js
+│   │   ├── ./resources/js/app.js
+│   │   └── ./resources/js/bootstrap.js
+│   └── ./resources/views
+│       ├── ./resources/views/auth
+│       │   └── ./resources/views/auth/login.blade.php
+│       ├── ./resources/views/components
+│       │   └── ./resources/views/components/layouts
+│       │       └── ./resources/views/components/layouts/app.blade.php
+│       ├── ./resources/views/livewire
+│       │   ├── ./resources/views/livewire/dasbor-utama.blade.php
+│       │   ├── ./resources/views/livewire/laporan-absensi.blade.php
+│       │   ├── ./resources/views/livewire/manajemen-absensi.blade.php
+│       │   ├── ./resources/views/livewire/manajemen-guru.blade.php
+│       │   ├── ./resources/views/livewire/manajemen-jadwal.blade.php
+│       │   └── ./resources/views/livewire/manajemen-perangkat.blade.php
+│       ├── ./resources/views/reports
+│       │   └── ./resources/views/reports/absensi-pdf.blade.php
+│       └── ./resources/views/welcome.blade.php
+├── ./routes
+│   ├── ./routes/api.php
+│   ├── ./routes/console.php
+│   └── ./routes/web.php
+├── ./storage
+│   ├── ./storage/app
+│   │   ├── ./storage/app/private
+│   │   └── ./storage/app/public
+│   ├── ./storage/framework
+│   │   ├── ./storage/framework/cache
+│   │   │   └── ./storage/framework/cache/data
+│   │   ├── ./storage/framework/sessions
+│   │   ├── ./storage/framework/testing
+│   │   └── ./storage/framework/views
+│   │       ├── ./storage/framework/views/01061955325793f30589455d9a4702c2.php
+│   │       ├── ./storage/framework/views/0386f55cd1a2a8e16b1d3d439548043d.php
+│   │       ├── ./storage/framework/views/04bf18394d5e847d0f9addb7a2ed51de.php
+│   │       ├── ./storage/framework/views/05745b2c4b95ed5a3010b7869f7bd117.php
+│   │       ├── ./storage/framework/views/081e33944bc22b41f0510d956d94a22e.php
+│   │       ├── ./storage/framework/views/0bc09f565a311deb55989ee1ed03e5a6.php
+│   │       ├── ./storage/framework/views/0ca85072e7817936da4c8f3911e3b442.php
+│   │       ├── ./storage/framework/views/1bb877bdcbddcc258d924901bd113ad1.php
+│   │       ├── ./storage/framework/views/2a232c371b2d9bab1a21fce7c3c4a410.php
+│   │       ├── ./storage/framework/views/2a38dd16b68e9659c225586a7a73046c.php
+│   │       ├── ./storage/framework/views/31d1e0aa77a61da1b97d59dc2aefe793.php
+│   │       ├── ./storage/framework/views/3330b464da6d1cf523e0e3046144db92.php
+│   │       ├── ./storage/framework/views/3347beb3b5356175489545c9d8762041.php
+│   │       ├── ./storage/framework/views/3545b6e6d5e12c105dae2739f6547e03.php
+│   │       ├── ./storage/framework/views/3be41f3740426edc1ec255aca3449001.php
+│   │       ├── ./storage/framework/views/3f39bbd3848f5724036b81234f14add3.php
+│   │       ├── ./storage/framework/views/3fa9676f438eff896598cec948cf9298.php
+│   │       ├── ./storage/framework/views/40bf642cdd603c1bd9d77e5d2a9e9247.php
+│   │       ├── ./storage/framework/views/40ed8cec09d04129a2536cf9846a4582.php
+│   │       ├── ./storage/framework/views/42c06411c7601ab43d6c46895f187798.php
+│   │       ├── ./storage/framework/views/440929c7225e8ce569e5c1994d982589.php
+│   │       ├── ./storage/framework/views/48b0f2e0276bbd91403272f1b2078d48.php
+│   │       ├── ./storage/framework/views/4943bc92ebba41e8b0e508149542e0ad.blade.php
+│   │       ├── ./storage/framework/views/4d1d5294a618e5f3f60fe9d30a2b0fb7.php
+│   │       ├── ./storage/framework/views/5002b0696a651c7c3e8cd3152a57bc4b.php
+│   │       ├── ./storage/framework/views/51d040dae94971589247632e94e08783.php
+│   │       ├── ./storage/framework/views/52e349b39e6715ab81f941c6baf25d50.php
+│   │       ├── ./storage/framework/views/57e5366487cf8420f9c2b55bf64d69e8.php
+│   │       ├── ./storage/framework/views/5d30c98acf6a87781e2a3d5dc1c2aaa5.php
+│   │       ├── ./storage/framework/views/6477328100525dcea205c57c797058ba.php
+│   │       ├── ./storage/framework/views/696d993c3fcfd721595ce25ca9cc8ad0.php
+│   │       ├── ./storage/framework/views/702969ecae0554ab82450200c96e5953.php
+│   │       ├── ./storage/framework/views/7932aa3360baaf37872be03e3a21d3f4.php
+│   │       ├── ./storage/framework/views/7c5eb6803e2ca5dc4342808f47e6ffc9.php
+│   │       ├── ./storage/framework/views/7fbc30cf1a9cb3e42459705afab4ca9c.php
+│   │       ├── ./storage/framework/views/7fe21a4a5a8eb39e2e8cbc017c4cc358.php
+│   │       ├── ./storage/framework/views/81c795d77bde5fe1f2b99bd744fdf0b7.php
+│   │       ├── ./storage/framework/views/8330e5f0dbaa4509c78f448871f8568c.php
+│   │       ├── ./storage/framework/views/8ab27126dc522e002bb8ddc60f5d985c.php
+│   │       ├── ./storage/framework/views/8acfce2831071af0f6506943489d2197.php
+│   │       ├── ./storage/framework/views/9bf67086963151b81209b45911ac7e06.php
+│   │       ├── ./storage/framework/views/a3574312d3a420c734a33110de0322a1.php
+│   │       ├── ./storage/framework/views/a4059359c7c03a8f515499550c519e8a.php
+│   │       ├── ./storage/framework/views/ad4cd0ac7978ba397eac1ffbbc1e28e1.php
+│   │       ├── ./storage/framework/views/afce6663ca95ba01914e57785fb58cdb.php
+│   │       ├── ./storage/framework/views/d04571351e7742602075e81efe2ab03b.php
+│   │       ├── ./storage/framework/views/d5c8bd23d2acbceb43ca45d7d50741c7.php
+│   │       ├── ./storage/framework/views/e5b1b014b69217f9854f6f748376aa0c.php
+│   │       ├── ./storage/framework/views/eaa62d5ab5c6976903100440bc804771.php
+│   │       ├── ./storage/framework/views/eee22ef326831fbb8259d7cf62e5fb9e.php
+│   │       └── ./storage/framework/views/f83d205b6073aee60a7f7bdc7a078940.php
+│   └── ./storage/logs
+│       └── ./storage/logs/laravel.log
+├── ./tests
+│   ├── ./tests/Feature
+│   │   └── ./tests/Feature/ExampleTest.php
+│   ├── ./tests/TestCase.php
+│   └── ./tests/Unit
+│       └── ./tests/Unit/ExampleTest.php
+└── ./vite.config.js
+
+42 directories, 132 files
